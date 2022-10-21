@@ -2,15 +2,14 @@
     box-sizing: border-box;
 }
 
-body,
-html {
+html body {
     max-width: 100vw;
     height: auto;
     margin: 0;
 }
 
 .wrapperHeaderMainIndex {
-    background: url(/assets/photos/09-night.jpg) no-repeat center;
+    background: url(/assets/photos/09-day.jpg) no-repeat center;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -22,20 +21,20 @@ html {
     flex-direction: row;
     justify-content: space-between;
     grid-area: header;
-    height: auto;
+    height: 80px;
     max-width: 100%;
     padding: 2px;
     background-color: grey;
     position: sticky;
     top: 0;
     overflow: hidden;
+    z-index: 100;
 }
 
 .header-index {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    grid-area: header;
     height: auto;
     max-width: 100%;
     padding: 2px;
@@ -53,8 +52,8 @@ html {
 }
 
 .icon {
-    padding: 1rem;
-    max-width: 80px;
+    padding: 0, 5rem;
+    max-width: 60px;
     align-items: flex-start;
 }
 
@@ -72,14 +71,14 @@ html {
 }
 
 .nav a.active {
-    text-decoration: overline;
+    text-decoration: underline;
 }
 
 /* Main */
 .main {
     max-width: auto;
     align-items: center;
-    background-color: grey;
+    background-color: rgb(134, 133, 133);
 }
 
 .Information-Index {
@@ -101,7 +100,16 @@ html {
     color: #00EDBD;
 }
 
-.bildWrapper {
+.Information a {
+    color: #00EDBD;
+}
+
+.Information a:hover {
+    font-weight: 600;
+    color: #c1c7c6;
+}
+
+.bild-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-height: 100%;
@@ -111,9 +119,7 @@ html {
 }
 
 .bild img {
-    background-color: blue;
     max-width: 100%;
-
 }
 
 /* main book-cottage*/
@@ -184,6 +190,7 @@ label {
     justify-content: space-around;
     background-color: #00EDBD;
 }
+
 
 .logos {
     display: flex;
